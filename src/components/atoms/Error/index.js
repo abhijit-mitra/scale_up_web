@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Error = ({msg}) => (
-  <div className="alert alert-danger" role="alert">{msg}</div>
+const Error = ({msg, ...rest}) => (
+  <div className="alert alert-danger" role="alert" {...rest}>{msg}</div>
 );
 
 Error.defaultProps={
