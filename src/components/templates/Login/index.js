@@ -27,6 +27,7 @@ class Login extends PureComponent {
     return (
       <div className="full-height-v d-flex justify-content-center align-items-center">
         <div className="row  border border-primary p-30 login">
+            <h2 className="col-md-12 mb-3 d-flex justify-content-center">Login</h2>
             <div className="col-md-12 mb-3">
               <Input
                 prepend='Username'

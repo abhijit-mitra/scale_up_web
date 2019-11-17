@@ -8,7 +8,7 @@ class Dashboard extends PureComponent {
     };
   }
   componentDidMount=()=>{
-    const users = JSON.parse(localStorage.getItem('users'));
+    const users = JSON.parse(localStorage.getItem('users'))||{};
     const userCount = Object.keys(users).length;
     this.setState({
       userCount

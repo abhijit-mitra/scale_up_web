@@ -9,11 +9,12 @@ const App = () => (
   <div className='app'>
     <NavBar>
       <NavItem to='/' label='Login'/>
-      <NavItem to='/userlist/:username&&:email&&:password' label='User List'/>
+      <NavItem to='/userlist/' label='User List'/>
       <NavItem to='/dashboard' label='Dashboard'/>
     </NavBar>
     <main>
       <Route exact path="/" component={Login} />
+      <Route exact path="/userlist/" component={UserList}/>
       <Route path="/userlist/:username&&:email&&:password" component={UserList}/>
       <Route path="/dashboard" component={Dashboard}/>
     </main>
